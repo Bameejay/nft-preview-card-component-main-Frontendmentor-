@@ -28,6 +28,19 @@
             font-family: "Outfit", sans-serif;
         }
         
+        hr {
+            width: 380px;
+            margin: 10px auto;
+            color: hsl(215, 51%, 70%);
+            height: 0;
+            opacity: 10%;
+            border-top: 0;
+        }
+        
+        span {
+            color: hsl(215, 51%, 70%);
+        }
+        
         .first-paragraph {
             font-size: 20px;
             font-family: "Outfit", sans-serif;
@@ -42,16 +55,16 @@
             color: hsl(0, 0%, 100%);
             font-size: 18px;
             width: 450px;
-            height: 620px;
+            height: 520px;
             margin: 100px auto;
             padding-bottom: 200px;
             text-align: center;
             border-radius: 20px;
         }
         
-        .container>img {
+        .container>a {
             width: 85%;
-            height: 65%;
+            height: 70%;
             margin: 40px auto;
             border-radius: 16px;
         }
@@ -59,12 +72,9 @@
         #second-paragraph {
             display: flex;
             align-items: center;
-            /* justify-content: space-between; */
-            /* margin: 32px 40px; */
             margin-top: -20px;
             margin-right: 48px;
             margin-left: 50px;
-            /* justify-content: center; */
             justify-content: space-around;
         }
         
@@ -72,19 +82,6 @@
             display: flex;
             justify-content: space-around;
         }
-        /* .row-element>img {
-            width: 14px;
-            height: 26px;
-            margin-bottom: 30%;
-            margin-right: 18%;
-            padding-left: 48px;
-        } */
-        /* .row-element p {
-            margin-top: 6px;
-            padding: 0 auto;
-            margin-left: -65px;
-            align-items: center;
-        } */
         
         .ethereum {
             display: flex;
@@ -94,35 +91,84 @@
         .clock {
             display: flex;
             align-items: center;
-            margin-left: 30%;
+            margin-left: 100px;
         }
+        
+        .ethereum>p {
+            margin-left: 12px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            color: hsl(178, 100%, 50%);
+        }
+        
+        .clock>p {
+            margin: 12px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            color: hsl(215, 51%, 70%);
+        }
+        
+        .last-paragraph {
+            font-family: "Outfit", sans-serif;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin-left: -12px; */
+            font-weight: 500;
+            padding-left: 18px;
+        }
+        
+        .last-paragraph>img {
+            border: 2px;
+            border-radius: 25px;
+            border-color: hsl(0, 0%, 100%);
+            border-style: inset;
+            height: 35px;
+        }
+        
+        .last-paragraph>p {
+            margin-right: 120px;
+            font-size: 18px;
+        }
+        /* a[href="#"] {
+            color: hsl(0, 0%, 100%);
+            text-decoration: none;
+        } */
     </style>
 </head>
 
 <body>
+
     <div class="container">
-        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" />
+        <a href="#"> <img src="./images/image-equilibrium.jpg" alt="Equilibrium" /></a>
 
-        <h2>Equilibrium #3429</h2>
+        <h2>
+            <a href="#">Equilibrium #3429</h2></a>
 
-        <p class="first-paragraph">
-            Our Equilibrium collection promotes balance and calm.
-        </p>
+            <p class="first-paragraph">
+                Our Equilibrium collection promotes balance and calm.
+            </p>
 
-        <div class="row-element">
-            <div class="ethereum">
-                <img src="./images/icon-ethereum.svg" />
-                <p>0.041 ETH</p>
+            <div class="row-element">
+                <div class="ethereum">
+                    <img src="./images/icon-ethereum.svg" alt="Ethereum" />
+                    <p>0.041 ETH</p>
+                </div>
+                <div class="clock">
+                    <img src="./images/icon-clock.svg" alt="Clock" />
+                    <p>3 days left</p>
+                </div>
             </div>
-            <div class="clock">
-                <img src="./images/icon-clock.svg" />
-                <p>3 days left</p>
+            <hr>
+            <div class="last-paragraph">
+                <img src="./images/image-avatar.png" alt="Avatar">
+                <p><span> Creation of </span>
+                    <a href="#">Jules Wyvern</p></a>
             </div>
-        </div>
     </div>
-    <!-- <hr /> -->
-    <!-- <p>Creation of <span>Jules Wyvern</span></p> -->
     </div>
+
 </body>
 
 </html>
